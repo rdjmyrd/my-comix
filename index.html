@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#171717">
+<title>Путешествие Бена — комикс</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="reader" id="reader">
+  <header class="topbar">
+    <a class="brand" href="#" id="brandHome" aria-label="Перейти к обложке"><span class="brand-mark">Б</span><span>Путешествие Бена</span></a>
+    <div class="top-meta"><span id="chapterTitle">Весь мир впереди!</span><span class="page-count" id="pageCount">1 / 8</span></div>
+    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="true">🔊 <span>Звук включён</span></button>
+  </header>
+  <main class="viewer" id="viewer">
+    <button class="nav-arrow prev" id="prevBtn" type="button" aria-label="Предыдущая страница">‹</button>
+    <div class="page-wrap" id="pageWrap"><img id="comicPage" src="assets/pages/01-cover.jpg" alt="Обложка комикса «Путешествие Бена»" draggable="false"></div>
+    <button class="nav-arrow next" id="nextBtn" type="button" aria-label="Следующая страница">›</button>
+  </main>
+  <footer class="controls">
+    <div class="progress"><span id="progressFill"></span></div>
+    <div class="control-row">
+      <div class="audio-card">
+        <button class="play" id="playBtn" type="button" aria-label="Слушать">▶</button>
+        <div class="audio-copy"><b id="audioTitle">Слушать страницу</b><span id="audioStatus">Русская озвучка · Бен и диктор</span></div>
+        <button class="stop" id="stopBtn" type="button">Стоп</button>
+      </div>
+      <div class="page-nav"><button class="text-btn" id="prevTextBtn" type="button">← Назад</button><button class="text-btn" id="nextTextBtn" type="button">Далее →</button></div>
+    </div>
+    <nav class="dots" id="dots" aria-label="Выбор страницы"></nav>
+    <p class="audio-hint">Озвучка работает через русский голос, доступный в браузере или на устройстве.</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
